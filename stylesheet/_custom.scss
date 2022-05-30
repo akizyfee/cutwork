@@ -7,3 +7,27 @@
       }
     }
 }
+
+   
+.gogotop {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+//GOTOP的HOVER
+.arrowdown img {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: .2s ease-in;
+}
+
+.gogotop:hover .arrowdown img {
+    transform: translateY(-50%);
+    opacity: 1;
+}
