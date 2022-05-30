@@ -1,0 +1,9 @@
+
+.btn {
+    &-test {
+      &:hover {
+        background-color: #FFF;
+        color: $dark;
+      }
+    }
+}
