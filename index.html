@@ -12,7 +12,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
-
+<style>
+    .imgfix{
+        background-image: url(./img/about-banner.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -52,6 +59,47 @@
             </div>
         </div>
     </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="http://placekitten.com/1920/500" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="http://placekitten.com/1920/500" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="http://placekitten.com/1920/500" class="d-block w-100" alt="">
+            </div>
+        </div>
+      </div>
+    <main class="container imgfix">
+        <div class="row my-5">
+            <div class="col-12 col-md-4"><img src="http://placekitten.com/300/300" class="img-fluid d-block m-auto"></div>
+            <div class="col-12 col-md-4"><img src="http://placekitten.com/300/300" class="img-fluid d-block m-auto"></div>
+            <div class="col-12 col-md-4"><img src="http://placekitten.com/300/300" class="img-fluid d-block m-auto"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6"><img src="http://placekitten.com/900/300" class="img-fluid d-block m-auto" style="object-fit: cover;"></div>
+            <div class="col-12 col-md-6 text-danger fs-2">這是暫時的字</div>
+        </div>
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-md-6"><img src="http://placekitten.com/900/300" class="img-fluid d-block m-auto"></div>
+            <div class="col-12 col-md-6 text-danger fs-2">這是暫時的字2</div>
+        </div>
+        <div class="d-flex mt-5">
+            <div class=""><img src="http://placekitten.com/900" class="img-fluid d-block m-auto" style="object-fit: cover;"></div>
+            <div class="d-flex flex-column">
+                <div style="height: 33.333%;"><img src="http://placekitten.com/900/300" class="img-fluid d-block m-auto" style="object-fit: cover;"></div>
+                <div style="height: 33.333%;"><img src="http://placekitten.com/900/300" class="img-fluid d-block m-auto" style="object-fit: cover;"></div>
+                <div style="height: 33.333%;"><img src="http://placekitten.com/900/300" class="img-fluid d-block m-auto" style="object-fit: cover;"></div>
+            </div>
+        </div>
+    </main>
     <!-- ----gotop---- -->
     <div onclick="topFunction()" id="myBtn" class="gogotop">
         <img src="" class="d-lg-none" alt="">
@@ -62,6 +110,11 @@
             </div>
         </div>
     </div>
+    <footer class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center">Copyright © 2022 版權所有 Website designed by RENU</div>
+        </div>
+    </footer>
     <script src="./js/all.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
